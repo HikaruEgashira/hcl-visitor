@@ -10,7 +10,7 @@ variable "region" {
 const ast = await parseHCL(hcl);
 const node = ast.walk().currentNode;
 traverse(node, {
-  attribute: (node) => {
-    console.log(node);
+  attribute: (n) => {
+    console.log(n);
   },
 });

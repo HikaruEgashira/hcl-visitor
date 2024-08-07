@@ -10,9 +10,10 @@
     "web-tree-sitter": "^0.22.6"
   },
   "devDependencies": {
-    "tree-sitter": "^0.21.1",
-    "tree-sitter-hcl": "github:tree-sitter-grammars/tree-sitter-hcl",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/sinon": "^17.0.3",
+    "sinon": "^18.0.0",
+    "tree-sitter-hcl": "github:tree-sitter-grammars/tree-sitter-hcl"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
