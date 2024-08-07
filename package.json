@@ -1,0 +1,24 @@
+{
+  "name": "hcl-visitor",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.1.0-beta.0",
+  "scripts": {
+    "build-wasm": "bunx tree-sitter build-wasm build-wasm node_modules/tree-sitter-hcl"
+  },
+  "dependencies": {
+    "web-tree-sitter": "^0.22.6"
+  },
+  "devDependencies": {
+    "tree-sitter": "^0.21.1",
+    "tree-sitter-hcl": "github:tree-sitter-grammars/tree-sitter-hcl",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "index.ts",
+    "lib/**/*"
+  ]
+}
