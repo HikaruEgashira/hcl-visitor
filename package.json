@@ -5,7 +5,7 @@
   "version": "1.1.0-beta.3",
   "license": "MIT",
   "scripts": {
-    "build": "bun build ./index.ts --minify --outdir=dist --target=node && cp lib/*.wasm dist",
+    "build": "bun run build.ts",
     "build-wasm": "bunx tree-sitter build-wasm build-wasm node_modules/tree-sitter-hcl"
   },
   "dependencies": {
@@ -35,8 +35,6 @@
   },
   "main": "dist/index.js",
   "files": [
-    "dist/**/*",
-    "index.ts",
-    "lib/**/*"
+    "dist/**/*"
   ]
 }
