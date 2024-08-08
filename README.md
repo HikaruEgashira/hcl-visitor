@@ -25,6 +25,24 @@ traverse(node, {
 });
 ```
 
+## Usage
+
+- GitHub Actions
+
+```yaml
+steps:
+  - name: Checkout
+    uses: actions/checkout@v2
+  - name: Setup Node.js
+    uses: actions/setup-node@v2
+    with:
+      node-version: "14"
+  - name: Install Dependencies
+    run: npm install
+  - name: Run Tests
+    run: npm test
+```
+
 ## Versioning
 
 v1.1.0
