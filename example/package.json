@@ -1,7 +1,6 @@
 {
   "name": "example",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -9,6 +8,6 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "hcl-visitor": "1.1.0-beta.0"
+    "hcl-visitor": "1.1.0-beta.2"
   }
 }
