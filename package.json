@@ -2,7 +2,7 @@
   "name": "hcl-visitor",
   "module": "index.ts",
   "type": "module",
-  "version": "1.1.0-beta.2",
+  "version": "1.1.0-beta.3",
   "license": "MIT",
   "scripts": {
     "build": "bun build ./index.ts --minify --outdir=dist --target=node && cp lib/*.wasm dist",
