@@ -1,5 +1,13 @@
 # HCL Visitor
 
+HCL Visitor is a library for traversing HashiCorp Configuration Language (HCL) ASTs.
+
+## Features
+
+- parseHCL: Parse HCL string to AST
+- generateHCL: Generate HCL string from AST
+- traverse: Traverse AST nodes
+
 ## Quick Start
 
 ```bash
@@ -32,15 +40,16 @@ traverse(node, {
 ```yaml
 steps:
   - name: Checkout
-    uses: actions/checkout@v2
-  - name: Setup Node.js
-    uses: actions/setup-node@v2
+    uses: actions/checkout@v4
+  - name: Setup HCL Visitor
+    run: npm i hcl-visitor
+    shell: bash
+  - name: Run Script
+    uses: actions/github-script@v7
     with:
-      node-version: "14"
-  - name: Install Dependencies
-    run: npm install
-  - name: Run Tests
-    run: npm test
+      script: |
+        const { parseHCL, traverse } = require("hcl-visitor");
+        # Your script here
 ```
 
 ## Versioning
