@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@types/sinon": "^21.0.1",
+    "@types/sinon": "^22.0.0",
     "esbuild": "^0.28.1",
     "sinon": "^22.0.0",
     "tree-sitter-hcl": "github:tree-sitter-grammars/tree-sitter-hcl"
